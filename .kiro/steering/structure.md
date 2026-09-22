@@ -52,7 +52,7 @@ The game loop only runs (`requestAnimationFrame` re-registers) when `phase === '
 
 ## Coding Conventions
 - TypeScript strict mode; avoid `any`
-- All numeric game constants defined in `constants.ts` — never hardcode magic numbers elsewhere
+- Numeric game constants placement and usage: see `constants-convention.md` (canonical). Do not duplicate the rule here — `constants.ts` is the single source.
 - Interfaces for all game objects defined in `types.ts`
 - HUD elements (`drawHUD`, `drawGameOver`, `drawStageClear`) are drawn without camera transform (fixed screen position)
 - Collected coins (`isCollected === true`) and dead enemies (`isAlive === false`) must be excluded from both rendering and collision checks

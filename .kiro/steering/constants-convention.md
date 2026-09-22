@@ -4,6 +4,8 @@ inclusion: always
 
 # Constants Convention: No Magic Numbers in Gameplay Code
 
+> Canonical enforcement for constants. `tech.md` lists the values (dictionary), `structure.md` defines placement (map). This file alone defines OK/NG and exceptions.
+
 ## Rule
 
 All physics values, game tuning values, and dimension constants MUST be defined in `src/constants.ts` and referenced by name everywhere else. Never hardcode numeric literals for these values inline.
