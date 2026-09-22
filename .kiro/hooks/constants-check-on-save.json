@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Constants convention check on save",
+      "description": "Ask the agent to verify the saved file against the canonical constants convention.",
+      "trigger": "PostFileSave",
+      "matcher": "src/.*\\.ts$",
+      "action": {
+        "type": "agent",
+        "prompt": "Check the saved file against .kiro/steering/constants-convention.md. If a numeric tuning value is hardcoded inline instead of referencing src/constants.ts, report the line and the constant to use. Do not fix automatically."
+      }
+    }
+  ]
+}

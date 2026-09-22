@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Typecheck on save",
+      "description": "Run TypeScript type checking whenever the agent saves a source file.",
+      "trigger": "PostFileSave",
+      "matcher": "src/.*\\.ts$",
+      "action": { "type": "command", "command": "npx tsc --noEmit" }
+    }
+  ]
+}
