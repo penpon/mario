@@ -46,8 +46,8 @@
 2. WHEN Player の左端または右端が Platform の側面に接触し、かつ Player が水平方向に移動している場合、THE Physics_Engine SHALL Player の X 方向速度を 0 に設定する
 3. WHEN Player の上端が Platform の下面に接触し、かつ Player が上方向に移動している場合、THE Physics_Engine SHALL Player の Y 方向速度を 0 に設定する
 4. IF 同一フレームで Player が Platform の上面と側面に同時に接触した場合、THEN THE Physics_Engine SHALL 上面との衝突判定を側面との衝突判定より優先して適用する
-5. IF Player の Y 座標が画面下端 Y 座標を 1 pixel 以上超えた場合、THEN THE Game SHALL Player の Life を 1 減らし、Player をステージ開始座標に再配置する
-6. IF Player の Life が 0 の状態で Player の Y 座標が画面下端 Y 座標を 1 pixel 以上超えた場合、THEN THE Game SHALL ゲームオーバー処理を開始しリスポーンを行わない
+5. IF Player の Y 座標が画面下端 Y 座標を 1 pixel 以上超え、かつ Player の Life が 2 以上の場合、THEN THE Game SHALL Player の Life を 1 減らし、Player をステージ開始座標に再配置する
+6. IF Player の Y 座標が画面下端 Y 座標を 1 pixel 以上超え、かつ Player の Life が 1 の場合、THEN THE Game SHALL Life を 0 にしてゲームオーバー処理を即座に開始し、リスポーンを行わない
 
 ### Requirement 3: 敵キャラクター
 
@@ -55,7 +55,7 @@
 
 #### Acceptance Criteria
 
-1. THE Enemy SHALL 初期配置された位置から水平方向に 2 px/フレームの速度で自律移動する
+1. WHILE Enemy が自律移動状態にある場合、THE Enemy SHALL 水平方向に 2 px/フレームの速度で移動する
 2. WHEN Enemy が Platform の端または壁に到達した場合、THE Enemy SHALL 移動方向を反転し、反転後も同じ速度（2 px/フレーム）で移動を継続する
 3. WHEN Player の下端が Enemy の上面（Enemy 上部 8 pixel 以内）に接触し、かつ Player の垂直方向速度が下向き（> 0）である場合、THE Game SHALL Enemy を消滅させ、Score に 100 点を加算する
 4. WHEN Player が Enemy の側面または下面に接触した場合、THE Game SHALL Player の Life を 1 減らし、Player をステージ開始座標に再配置するリスポーン処理を開始する
@@ -87,7 +87,7 @@
 
 #### Acceptance Criteria
 
-1. WHEN Player が Goal に接触した場合、THE Game SHALL ステージクリア画面を表示し、ゲームループを停止する
+1. WHEN Player が Goal に接触した場合、THE Game SHALL ステージクリア画面を表示し、ゲームループを停止する（同フレームで Life が 0 になった場合もステージクリアを優先する）
 2. WHEN Life が 0 になった場合、THE Game SHALL ゲームオーバー画面を表示し、ゲームループを停止する
 3. WHEN ゲームオーバー画面が表示されている場合、THE Game SHALL「R」キーの入力によりゲームを初期状態（Score=0, Life=3）でリスタートする
 4. WHEN ステージクリア画面が表示されている場合、THE Game SHALL「R」キーの入力によりゲームを初期状態（Score=0, Life=3）でリスタートする
