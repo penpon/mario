@@ -6,27 +6,27 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
 
 ## Tasks
 
-- [ ] 1. プロジェクト構成・共通型定義・定数の整備
-  - [ ] 1.1 Vite + TypeScript プロジェクトの初期化と `index.html` の作成
+- [x] 1. プロジェクト構成・共通型定義・定数の整備
+  - [x] 1.1 Vite + TypeScript プロジェクトの初期化と `index.html` の作成
     - `npm create vite` で TypeScript テンプレートを生成する
     - `index.html` に `<canvas id="game-canvas">` 要素を追加する
     - `src/` ディレクトリ構成（`main.ts`, `types.ts`, `constants.ts` 等）を作成する
     - _Requirements: 8.1_
-  - [ ] 1.2 Vitest + fast-check のセットアップ
+  - [x] 1.2 Vitest + fast-check のセットアップ
     - `vitest` と `fast-check` をインストールし `vite.config.ts` にテスト設定を追加する
     - `tests/` ディレクトリを作成し、`vitest.config.ts` でテスト対象パスを設定する
     - _Requirements: テスト基盤_
-  - [ ] 1.3 共通型定義（`src/types.ts`）の実装
+  - [x] 1.3 共通型定義（`src/types.ts`）の実装
     - `GameObject`, `AABB`, `KeyState`, `GamePhase`, `GameState` インターフェースを定義する
     - `PlatformDef`, `CoinDef`, `EnemyDef`, `GoalDef`, `StageData` インターフェースを定義する
     - _Requirements: 全要件の基盤_
-  - [ ] 1.4 ゲーム定数（`src/constants.ts`）の実装
+  - [x] 1.4 ゲーム定数（`src/constants.ts`）の実装
     - `PLAYER_SPEED = 5`, `JUMP_VELOCITY = -15`, `GRAVITY = 1`, `ENEMY_SPEED = 2` を定義する
     - `PLAYER_WIDTH = 32`, `PLAYER_HEIGHT = 32`, `INVINCIBLE_FRAMES = 120` を定義する
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 3.1_
 
-- [ ] 2. InputHandler の実装
-  - [ ] 2.1 `src/input.ts` に `InputHandler` クラスを実装する
+- [x] 2. InputHandler の実装
+  - [x] 2.1 `src/input.ts` に `InputHandler` クラスを実装する
     - `keydown` / `keyup` イベントをリッスンし `KeyState`（left / right / jump / restart）を更新する
     - ArrowLeft・A キー → `left`、ArrowRight・D キー → `right`、Space・ArrowUp → `jump`、R → `restart` をマッピングする
     - `getState(): KeyState` と `destroy(): void` を実装する
@@ -36,8 +36,8 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - `destroy()` 呼び出し後にイベントが無視されることを確認する
     - _Requirements: 1.1, 1.2, 1.3_
 
-- [ ] 3. Player の実装
-  - [ ] 3.1 `src/player.ts` に `Player` クラスを実装する
+- [x] 3. Player の実装
+  - [x] 3.1 `src/player.ts` に `Player` クラスを実装する
     - `x, y, vx, vy, isOnGround, isInvincible, invincibleTimer` フィールドを実装する
     - `applyInput(keyState: KeyState): void` を実装する
       - 左右キーで `vx = ±PLAYER_SPEED`、キー離しで `vx = 0`
@@ -55,11 +55,11 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - `// Feature: super-mario-like-game, Property 2: ジャンプ速度と二段ジャンプ禁止`
     - 地上 / 空中状態のプレイヤー × ジャンプ入力で `vy` の変化を検証する
 
-- [ ] 4. PhysicsEngine の実装
-  - [ ] 4.1 `src/physics.ts` に `overlaps` と `getOverlap` ヘルパー関数を実装する
+- [x] 4. PhysicsEngine の実装
+  - [x] 4.1 `src/physics.ts` に `overlaps` と `getOverlap` ヘルパー関数を実装する
     - AABB どうしの重なり検出と `overlapX / overlapY` 量の計算を実装する
     - _Requirements: 2.1, 2.2, 2.3, 2.4_
-  - [ ] 4.2 `applyGravity` を実装する
+  - [x] 4.2 `applyGravity` を実装する
     - 空中にいるエンティティに対して毎フレーム `vy += GRAVITY` を適用する
     - `isOnGround` が `false` の場合のみ適用する
     - _Requirements: 1.4_
@@ -68,7 +68,7 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - **Validates: Requirements 1.4**
     - `// Feature: super-mario-like-game, Property 3: 重力による速度の単調増加`
     - ランダムな初期 `vy` × フレーム数 N で `vy` が `初期値 + N × GRAVITY` になることを検証する
-  - [ ] 4.4 `resolvePlayerPlatformCollision` を実装する
+  - [x] 4.4 `resolvePlayerPlatformCollision` を実装する
     - 上面衝突（`vy > 0`）: `vy = 0`、`isOnGround = true`、プレイヤー下端を Platform 上面に揃える
     - 側面衝突（水平移動）: `vx = 0`
     - 天井衝突（`vy < 0`）: `vy = 0`
@@ -84,16 +84,16 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - **Validates: Requirements 2.4**
     - `// Feature: super-mario-like-game, Property 6: 上面衝突と側面衝突の優先順位不変性`
     - 上面・側面両接触の境界条件を生成し、`vx` が変化せず `vy` のみ 0 になることを検証する
-  - [ ] 4.7 `resolveEnemyPlatformCollision` を実装する
+  - [x] 4.7 `resolveEnemyPlatformCollision` を実装する
     - 上面衝突処理と、ステージ端・壁での方向転換ロジックを実装する
     - 敵がステージ外（`y > canvas.height + 1`）に落ちた場合、`isAlive = false` にする
     - _Requirements: 3.1, 3.2_
 
-- [ ] 5. Checkpoint — ここまでのテストがすべてパスすることを確認する
+- [x] 5. Checkpoint — ここまでのテストがすべてパスすることを確認する
   - 全テストがパスすることを確認し、疑問があればユーザーに確認する。
 
-- [ ] 6. Enemy の実装
-  - [ ] 6.1 `src/enemy.ts` に `Enemy` クラスを実装する
+- [x] 6. Enemy の実装
+  - [x] 6.1 `src/enemy.ts` に `Enemy` クラスを実装する
     - `x, y, vx, isAlive` フィールドと初期速度（`ENEMY_SPEED` または `-ENEMY_SPEED`）を実装する
     - `update(platforms: Platform[]): void` を実装し、移動・衝突による方向転換を処理する
     - _Requirements: 3.1, 3.2_
@@ -103,8 +103,8 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - `// Feature: super-mario-like-game, Property 7: 敵の速度不変と方向転換`
     - ランダムな Enemy 状態 × Platform 端条件で `|vx| === ENEMY_SPEED` を常に検証する
 
-- [ ] 7. Camera の実装
-  - [ ] 7.1 `src/camera.ts` に `Camera` クラスを実装する
+- [x] 7. Camera の実装
+  - [x] 7.1 `src/camera.ts` に `Camera` クラスを実装する
     - `offsetX` フィールドを実装する
     - `update(playerX, stageWidth, screenWidth)`: プレイヤーが画面中央を超えたら追従し、ステージ端でクランプする
     - `worldToScreen(worldX): number` を実装する（`worldX - offsetX`）
@@ -120,14 +120,14 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - `// Feature: super-mario-like-game, Property 12: カメラのステージ端クランプ`
     - ランダムなプレイヤー X 座標 × ステージ幅で `offsetX` が `[0, stageWidth - screenWidth]` に収まることを検証する
 
-- [ ] 8. Stage データの実装
-  - [ ] 8.1 `src/stage.ts` に `StageData` の定義とサンプルステージを実装する
+- [x] 8. Stage データの実装
+  - [x] 8.1 `src/stage.ts` に `StageData` の定義とサンプルステージを実装する
     - プラットフォーム（地面・ブロック）、コイン、敵、ゴール、スポーン座標を配置する
     - ステージ幅は画面幅の3〜4倍程度とし、適切な難易度を持つレイアウトにする
     - _Requirements: 全体_
 
-- [ ] 9. Renderer の実装
-  - [ ] 9.1 `src/renderer.ts` に `Renderer` クラスを実装する
+- [x] 9. Renderer の実装
+  - [x] 9.1 `src/renderer.ts` に `Renderer` クラスを実装する
     - `render(state: GameState, camera: Camera): void` を実装し、各フレームで Canvas をクリアして全オブジェクトを描画する
     - Camera の `worldToScreen` でワールド座標→スクリーン座標変換を行い、Platform / Player / Enemy / Coin / Goal を描画する
     - 取得済みコイン（`isCollected === true`）と死亡敵（`isAlive === false`）は描画しない
@@ -135,16 +135,16 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - `drawGameOver()` と `drawStageClear()` のオーバーレイ画面を実装する
     - _Requirements: 5.1, 5.2, 5.3, 6.1, 6.2, 8.2_
 
-- [ ] 10. GameManager とゲームループの実装
-  - [ ] 10.1 `src/game.ts` に `GameManager` クラスと `GameState` を実装する
+- [x] 10. GameManager とゲームループの実装
+  - [x] 10.1 `src/game.ts` に `GameManager` クラスと `GameState` を実装する
     - `start()`: `requestAnimationFrame` でゲームループを開始する
     - `stop()`: ループを停止する
     - `restart()`: `score = 0`, `lives = 3` でゲーム状態を完全リセットし `start()` を呼ぶ
     - _Requirements: 8.1, 6.3, 6.4_
-  - [ ] 10.2 ゲームループの各フレーム処理を実装する
+  - [x] 10.2 ゲームループの各フレーム処理を実装する
     - `InputHandler.getState()` → `player.applyInput()` → `PhysicsEngine.update()` → ゲームイベント検知 → `Camera.update()` → `Renderer.render()` の順で実行する
     - _Requirements: 8.1, 8.2, 8.3_
-  - [ ] 10.3 ゲームイベント検知ロジックを実装する
+  - [x] 10.3 ゲームイベント検知ロジックを実装する
     - プレイヤーとコインの衝突: `isCollected = true`、Score + 50
     - プレイヤーと敵の踏みつけ判定（下端が Enemy 上部 8px 以内 かつ `vy > 0`）: `isAlive = false`、Score + 100
     - プレイヤーと敵の側面・下面衝突（無敵でない場合）: Lives - 1、リスポーン or ゲームオーバー
@@ -182,13 +182,13 @@ TypeScript + HTML5 Canvas + Vite によるバニラ実装。外部ゲームエ�
     - ゴール接触と Lives 0 が同フレームで発生した場合にステージクリアが優先されることを確認する
     - _Requirements: 6.1_
 
-- [ ] 11. エントリポイントの実装とすべてのコンポーネントの統合
-  - [ ] 11.1 `src/main.ts` にエントリポイントを実装する
+- [x] 11. エントリポイントの実装とすべてのコンポーネントの統合
+  - [x] 11.1 `src/main.ts` にエントリポイントを実装する
     - Canvas 要素を取得し `GameManager` を生成して `start()` を呼ぶ
     - 「R」キーのリスタート処理を `InputHandler` 経由で `GameManager.restart()` に接続する
     - _Requirements: 6.3, 6.4, 8.1_
 
-- [ ] 12. Final Checkpoint — すべてのテストがパスすることを確認する
+- [x] 12. Final Checkpoint — すべてのテストがパスすることを確認する
   - 全テストを実行し（`vitest --run`）、すべてパスすることを確認する。疑問があればユーザーに確認する。
 
 ## Notes

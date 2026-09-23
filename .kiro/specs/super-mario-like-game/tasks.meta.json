@@ -1,0 +1,415 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Vite + TypeScript プロジェクトの初期化と `index.html` の作成": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093241374
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093251039
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093749923
+      }
+    ],
+    "1.2 Vitest + fast-check のセットアップ": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093241538
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093254129
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093753365
+      }
+    ],
+    "1.3 共通型定義（`src/types.ts`）の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093241727
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093257272
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093758782
+      }
+    ],
+    "1.4 ゲーム定数（`src/constants.ts`）の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093241832
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093260466
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093762369
+      }
+    ],
+    "2.1 `src/input.ts` に `InputHandler` クラスを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093241935
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093766795
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097747276
+      }
+    ],
+    "3.1 `src/player.ts` に `Player` クラスを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242096
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093770239
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097750801
+      }
+    ],
+    "4.1 `src/physics.ts` に `overlaps` と `getOverlap` ヘルパー関数を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242196
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093774053
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097754476
+      }
+    ],
+    "4.2 `applyGravity` を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242298
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093779017
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097757728
+      }
+    ],
+    "4.4 `resolvePlayerPlatformCollision` を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242493
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097764491
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101458066
+      }
+    ],
+    "4.7 `resolveEnemyPlatformCollision` を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242610
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101487885
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105167998
+      }
+    ],
+    "5. Checkpoint — ここまでのテストがすべてパスすることを確認する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242787
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105182149
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790117231390
+      }
+    ],
+    "6.1 `src/enemy.ts` に `Enemy` クラスを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093242880
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101491566
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105172090
+      }
+    ],
+    "7.1 `src/camera.ts` に `Camera` クラスを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243007
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101495012
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105176827
+      }
+    ],
+    "8.1 `src/stage.ts` に `StageData` の定義とサンプルステージを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243175
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097768138
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101462023
+      }
+    ],
+    "9.1 `src/renderer.ts` に `Renderer` クラスを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243262
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790117235589
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118502148
+      }
+    ],
+    "10.1 `src/game.ts` に `GameManager` クラスと `GameState` を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243360
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118506781
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118638515
+      }
+    ],
+    "10.2 ゲームループの各フレーム処理を実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243501
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118510736
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118642513
+      }
+    ],
+    "10.3 ゲームイベント検知ロジックを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243611
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118646943
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118739386
+      }
+    ],
+    "11.1 `src/main.ts` にエントリポイントを実装する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243710
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118743850
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118782521
+      }
+    ],
+    "12. Final Checkpoint — すべてのテストがパスすることを確認する": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093243812
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118787310
+      },
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790119328272
+      }
+    ],
+    "1. プロジェクト構成・共通型定義・定数の整備": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790093762514
+      }
+    ],
+    "2. InputHandler の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097747385
+      }
+    ],
+    "3. Player の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790097750926
+      }
+    ],
+    "8. Stage データの実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790101462205
+      }
+    ],
+    "4. PhysicsEngine の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105168137
+      }
+    ],
+    "6. Enemy の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105172188
+      }
+    ],
+    "7. Camera の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790105177025
+      }
+    ],
+    "9. Renderer の実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118502385
+      }
+    ],
+    "10. GameManager とゲームループの実装": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118739535
+      }
+    ],
+    "11. エントリポイントの実装とすべてのコンポーネントの統合": [
+      {
+        "executionId": "ca5ef5ed-6a32-478f-83d0-3e2411a44f87",
+        "chatSessionId": "sess_3f38bb3b-dc11-4985-b3e3-196cabf1d1db",
+        "timestamp": 1790118782689
+      }
+    ]
+  }
+}
